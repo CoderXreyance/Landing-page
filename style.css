@@ -1,0 +1,196 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("https://cdn.pixabay.com/photo/2023/04/28/07/16/man-7956041_1280.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav {
+    width : 100%;
+    height: 100px;
+    color : white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover:before {
+    width: 90%;
+}
+.register a {
+    text-decoration: none;
+    color:white;
+    padding:10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.register a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.h-txt span {
+    letter-spacing: 5px;
+
+}
+.h-txt h1 {
+    font-size: 3.5em;
+}
+.h-txt a {
+    text-decoration: none;
+    background: indianred;
+    color:white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+    
+}
+.h-txt a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    left: 10%;
+
+}
+
+.container > div {
+    width: 250px;
+    border-radius:10px;
+    height: 300px;
+    box-shadow: 10px 10px lightsalmon;
+    transition: width 1s, height 1s;
+}
+
+.container>div:hover {
+    width: 300px;
+    height: 350px;
+}
+
+
+.first {
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/11/05/31/suit-2737909__340.jpg');
+    background-size: cover;
+}
+.second {
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/02/14/26/suit-2911328__340.jpg');
+    background-size: cover;
+}
+.third {
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/02/14/24/model-2911320__340.jpg');
+    background-size: cover;
+}
+.fourth {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/11/12/20/suit-1971662__340.jpg');
+    background-size: cover;
+}
+
+footer {
+    background-color: #333;
+    opacity: 0.8;
+    color: #fff;
+    padding: 50px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  footer p {
+    margin-bottom: 30px;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li i {
+    margin-right: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      text-align: center;
+    }
+    
+    footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+div {
+    text-align: center;
+    position: relative;
+    
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.buttonContainer  button {
+    background-color: lightsalmon;
+    color: #000;
+    border-radius: 0px 10px;
+    padding: 4px;
+}
